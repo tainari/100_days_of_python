@@ -11,7 +11,15 @@ while keep_going:
             print("Incorrect entry. Please try again.")
             mode = ""
     
-    message = input("Type your message:\n").split(" ")
+    message = ""
+    while not message:
+        message = input("Type your message:\n").lower()
+        if set(message).difference("abcdefghijklmnopqrstuvwxyz"):
+            print("Please do not include numbers or symbols. Letters or spaces only.")
+            message = ""
+        else:
+            message = message.split(" ")
+
 
     shift = int(input("Type the shift number:\n")) % 26
     if shift < 0:
