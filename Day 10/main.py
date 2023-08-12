@@ -27,9 +27,9 @@ calc_dict = {
 
 print(logo)
 newstring  = "\n"
-num1 = int(input("What is the first number? "))
+num1 = float(input("What is the first number? "))
 operation = input(f"Which operation do you want? Options: {' '.join(calc_dict.keys())}\n")
-num2 = int(input("What is the second number? "))
+num2 = float(input("What is the second number? "))
 result = calc_dict[operation](num1,num2)
 print(f'{num1} {operation} {num2} = {result}')
 keep_going = input(
@@ -37,7 +37,7 @@ keep_going = input(
 keep_going = True if keep_going == 'yes' else False
 
 while keep_going == True:
-    num3 = int(input("What's the next number? \n"))
+    num3 = float(input("What's the next number? \n"))
     operation = input(
         f"Which operation do you want? Options: {' '.join(calc_dict.keys())}\n")
     #note to self: you can join with a newstring by using newstring.join(list)
