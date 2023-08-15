@@ -41,3 +41,5 @@ as well as parsing longer chains of inputs (e.g., "2 + 4 * 8").
 Coded up a simplified version of blackjack. Went "above and beyond" by including varying deck size and shuffling the deck.
 Future versions may include splitting the player's hand in the case of multiple Aces.
 
+## Day 12: Guess the Number #️⃣
+A simple number guessing game. 
