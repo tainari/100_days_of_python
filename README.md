@@ -43,3 +43,10 @@ Future versions may include splitting the player's hand in the case of multiple 
 
 ## Day 12: Guess the Number #️⃣
 A simple number guessing game. 
+
+## Day 13: Debugging 🐛
+This exercise was done on an external platform.
+
+## Day 14: Higher Lower ⬆️⬇️
+A game where the user must guess who has a higher instagram following.
+I'd like to come back and pull live instagram data, if possible, in the future!
