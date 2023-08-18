@@ -33,6 +33,7 @@ def accept_user_coins():
 def check_sufficient_payment(total_in,coffee_type):
     return total_in >= recipes[coffee_type]["price"]
 
+
 def process_payment(total_in,coffee_type):
     price = recipes[coffee_type]["price"]
     change = total_in - price

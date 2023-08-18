@@ -50,3 +50,7 @@ This exercise was done on an external platform.
 ## Day 14: Higher Lower ⬆️⬇️
 A game where the user must guess who has a higher instagram following.
 I'd like to come back and pull live instagram data, if possible, in the future!
+
+## Day 15: Coffee Machine ☕️
+A coffee machine! Takes money, makes change, checks, depletes, and reports resources, and makes coffee. Also turns off!
+A more advanced iteration will take into account whether the machine can make change. 
