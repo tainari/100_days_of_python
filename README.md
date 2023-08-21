@@ -54,3 +54,8 @@ I'd like to come back and pull live instagram data, if possible, in the future!
 ## Day 15: Coffee Machine ☕️
 A coffee machine! Takes money, makes change, checks, depletes, and reports resources, and makes coffee. Also turns off!
 A more advanced iteration will take into account whether the machine can make change. 
+
+## Day 16: OOP Coffee Machine ☕️☕️☕️
+Updated coffee machine! Rather than using the course's OOP version, I created my own based on Day 15's.
+I also added the more advanced iteration, which checks if the machine can make change.
+For example, if the register is empty and a user pays 5 quarters and 3 dimes for a $1.50 espresso, they're told the machine can't make change.
