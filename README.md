@@ -61,4 +61,5 @@ I also added the more advanced iteration, which checks if the machine can make c
 For example, if the register is empty and a user pays 5 quarters and 3 dimes for a $1.50 espresso, they're told the machine can't make change.
 
 ## Day 17: Quiz Game 🤔
-True-or-false quiz game with twelve questions, focused on OOP. Added some answer verification.
+True-or-false quiz game with twelve questions, focused on OOP. Added some answer verification. 
+(Updated to be more OOP-focused and with external question bank)
