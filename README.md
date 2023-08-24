@@ -63,3 +63,9 @@ For example, if the register is empty and a user pays 5 quarters and 3 dimes for
 ## Day 17: Quiz Game 🤔
 True-or-false quiz game with twelve questions, focused on OOP. Added some answer verification. 
 (Updated to be more OOP-focused and with external question bank)
+
+## Day 18: Million-Dollar Artwork 🎨
+Created Damien-Hirsch-esque dot art. Improved on expected output of project by not hardcoding the colour palette. 
+
+## Day 19: Turtle Race! 🐢
+A simple game with six racing turtles, including betting by the user on which turtle will win. 
