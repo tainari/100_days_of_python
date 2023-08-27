@@ -69,3 +69,7 @@ Created Damien-Hirsch-esque dot art. Improved on expected output of project by n
 
 ## Day 19: Turtle Race! 🐢
 A simple game with six racing turtles, including betting by the user on which turtle will win. 
+
+## Day 20 & 21: Snake 🐍
+Letting go of the long-held jealousy that I had a Motorola when my friends had Nokias by creating this game using the Turtle package. 
+Implemented slightly differently than tutorial by using grid-based food placement rather than Turtle distance.
