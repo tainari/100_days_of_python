@@ -719,7 +719,6 @@ colours = [
 "thistle2",
 "thistle3",
 "thistle4",
-"tomato 255",
 "tomato1",
 "tomato2",
 "tomato3",

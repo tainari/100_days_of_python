@@ -75,5 +75,7 @@ Letting go of the long-held jealousy that I had a Motorola when my friends had N
 Implemented slightly differently than tutorial by using grid-based food placement rather than Turtle distance.
 
 ## Day 22: Pong 🏓
-The classic game, implemented using Python's Turtle package. Originally coded focusing on heading changes 
-(turning by 90 degrees on impact), but 
+The classic game, implemented using Python's Turtle package. Originally coded focusing on heading changes (turning by 90 degrees on impact), but the bouncing behaviour was janky, so switched to the tutorial's method of movement and bouncing.
+
+## Day 23: Frogger (but with a turtle) 🐸🚗
+Implemented without use of tutorial. Future updates: making sure that the cars don't overlap.
