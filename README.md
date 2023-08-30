@@ -83,3 +83,7 @@ The classic game, implemented using Python's Turtle package. Originally coded fo
 Implemented without use of tutorial. Future updates: making sure that the cars don't overlap.
 
 ## Day 24: Mail Merge 📨
+Basic file read / write
+
+## Day 25: United States Guessing Game 🗺️
+Game to guess all 50 states. I'm stuck at 32 on my own playthrough!
