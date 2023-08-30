@@ -87,3 +87,6 @@ Basic file read / write
 
 ## Day 25: United States Guessing Game 🗺️
 Game to guess all 50 states. I'm stuck at 32 on my own playthrough!
+
+## Day 26: NATO Alphabet
+Review of list and dictionary comprehension. Added some functionality for non-alpha characters in user string.
