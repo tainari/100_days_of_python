@@ -17,11 +17,20 @@ class Snake():
         self.max_coord = window_dimension / 2 - 10
         self.min_coord = -window_dimension / 2 + 10
 
+    def reset_snek(self):
+        for seg in self.body:
+            seg.goto(x=1000,y=1000)
+        self.body = []
+        self.occupied_spaces = set()
+        self.len = 0
+        self.create_snake()
+        self.head = self.body[0]
     def create_snake(self):
         x_coord = 0
         for i in range(self.start_len):
             self.add_segment(x_coord,0)
             x_coord -= 20
+        print(self.body)
 
     def add_segment(self,x,y):
         t = Turtle(shape='square')
@@ -29,17 +38,14 @@ class Snake():
         t.color("white")
         t.setx(x)
         t.sety(y)
-        # print(f"Added to ({x},{y}).")
         self.body.append(t)
         self.occupied_spaces.add((x,y))
         self.len += 1
-        # print(self.occupied_spaces)
 
     def increase_body(self):
         tail = self.body[-1]
         tail_x = 10 * round(int(tail.xcor()) / 10)
         tail_y = 10 * round(int(tail.ycor()) / 10)
-        # self.add_segment(tail_x,tail_y)
         tail_orientation = tail.heading()
         if tail_orientation == NORTH:
             self.add_segment(tail_x,tail_y-20)
@@ -81,7 +87,6 @@ class Snake():
     def got_food(self,pos):
         food_x, food_y = pos
         return (self.head.xcor() - 10 <= food_x <= self.head.xcor() + 10) and (self.head.ycor() - 10 <= food_y <= self.head.ycor() + 10)
-
 
     def move(self):
         # tail = self.body[-1]

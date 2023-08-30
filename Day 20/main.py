@@ -5,7 +5,6 @@ from food import Food
 from score import Score
 
 
-
 screen = Screen()
 WINDOW_DIMENSION = 600
 screen.setup(width=WINDOW_DIMENSION,height=WINDOW_DIMENSION)
@@ -29,17 +28,27 @@ screen.onkey(snek.left,'Left')
 screen.onkey(snek.up,'Up')
 
 nom = Food()
-game_active = True
-while game_active:
-    screen.update()
-    time.sleep(.1)
-    point = snek.got_food(tuple(nom.pos()))
-    if game_active and point:
-        current_score.increase_score()
-        snek.increase_body()
-        nom.move()
-    game_active = snek.move()
 
-current_score.user_loses()
+def play_game():
+    game_active = True
+    while game_active:
+        screen.update()
+        time.sleep(.1)
+        point = snek.got_food(tuple(nom.pos()))
+        if point:
+            current_score.increase_score()
+            snek.increase_body()
+            nom.move()
+        game_active = snek.move()
+        if not game_active:
+            current_score.user_loses()
+            snek.reset_snek()
+            screen.update()
+            nom.move()
+            game_active = True
+
+screen.onkey(play_game,' ')
+
+play_game()
 
 screen.exitonclick()

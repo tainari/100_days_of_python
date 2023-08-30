@@ -73,9 +73,13 @@ A simple game with six racing turtles, including betting by the user on which tu
 ## Day 20 & 21: Snake 🐍
 Letting go of the long-held jealousy that I had a Motorola when my friends had Nokias by creating this game using the Turtle package. 
 Implemented slightly differently than tutorial by using grid-based food placement rather than Turtle distance.
+Future updates might ensure that food spawns in locations that are not occupied by snake.
+Updated 8/28 with high score saving functionality.
 
 ## Day 22: Pong 🏓
 The classic game, implemented using Python's Turtle package. Originally coded focusing on heading changes (turning by 90 degrees on impact), but the bouncing behaviour was janky, so switched to the tutorial's method of movement and bouncing.
 
 ## Day 23: Frogger (but with a turtle) 🐸🚗
 Implemented without use of tutorial. Future updates: making sure that the cars don't overlap.
+
+## Day 24: Mail Merge 📨
