@@ -88,5 +88,15 @@ Basic file read / write
 ## Day 25: United States Guessing Game 🗺️
 Game to guess all 50 states. I'm stuck at 32 on my own playthrough!
 
-## Day 26: NATO Alphabet
+## Day 26: NATO Alphabet 💃
 Review of list and dictionary comprehension. Added some functionality for non-alpha characters in user string.
+
+## Day 27: Miles to Kilometers Converter 🔄
+TKinter-based miles-to-kilometers converter. Future funcionality may include dropdown of conversion options. 
+
+## Day 28: Pomodoro Timer 🍅
+TKinter-based pomodoro timer. Slightly updated approach to managing number of reps + resetting.
+
+## Day 29: Password Manager 🗝️
+TKinter-based password manager (write only). Generates password and writes it to a file.
+Additional features in the future may include: overwriting previous passwords; retrieving passwords via GUI
