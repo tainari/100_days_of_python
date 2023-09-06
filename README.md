@@ -100,3 +100,7 @@ TKinter-based pomodoro timer. Slightly updated approach to managing number of re
 ## Day 29: Password Manager 🗝️
 TKinter-based password manager (write only). Generates password and writes it to a file.
 Additional features in the future may include: overwriting previous passwords; retrieving passwords via GUI
+
+## Day 30: Exception Handling 🙊
+Implemented additional features in password manager, including retrieving passwords & data storage in JSON format.
+JSON format also accounts for overwriting previous passwords! Thus, added additional functionality: ensuring that user wants to overwrite password.
