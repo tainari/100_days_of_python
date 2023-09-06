@@ -104,3 +104,4 @@ Additional features in the future may include: overwriting previous passwords; r
 ## Day 30: Exception Handling 🙊
 Implemented additional features in password manager, including retrieving passwords & data storage in JSON format.
 JSON format also accounts for overwriting previous passwords! Thus, added additional functionality: ensuring that user wants to overwrite password.
+NOTE: The passwords and emails stored in the JSON are all fake. :)
