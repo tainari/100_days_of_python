@@ -150,3 +150,14 @@ or answer is being shown.
 Note: I cannot for the life of me figure out how to get the thin line around the buttons to go away when they're hidden.
 Additional functionality to develop: showing how many correct / total in a session; keeping track of how "well known"
 each word is by a user.
+
+## Day 32: Automated birthday emails 🎁
+
+A quick program to send automated emails if it's somebody's birthday. First use of smtplib library, and also first use
+of Python Anywhere!
+
+## Day 33: ISS Overhead 💫
+
+A quick program to email the user (me!) if the ISS is within 5 degrees of NYC and it's night (so that it's visible).
+First use of APIs. Relies on a while loop + sleep for 60 seconds to check every minute — it would be better to deploy
+it on a server and run every minute instead!
