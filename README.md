@@ -161,3 +161,11 @@ of Python Anywhere!
 A quick program to email the user (me!) if the ISS is within 5 degrees of NYC and it's night (so that it's visible).
 First use of APIs. Relies on a while loop + sleep for 60 seconds to check every minute — it would be better to deploy
 it on a server and run every minute instead!
+
+## Day 34: Quiz Game, with GUI! 👈🧐
+
+Expansion of Day 17's quiz game using TKinter GUI and proper API connection to get questions.
+
+## Day 35: SMS Rain Notifications ☔️
+
+Created a script that runs at 6:30am every day and sends a text to my personal number if it's going to rain in NYC
