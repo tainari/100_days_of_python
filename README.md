@@ -169,3 +169,10 @@ Expansion of Day 17's quiz game using TKinter GUI and proper API connection to g
 ## Day 35: SMS Rain Notifications ☔️
 
 Created a script that runs at 6:30am every day and sends a text to my personal number if it's going to rain in NYC
+
+## Day 36: SMS Stock Change Notification 📈📉
+
+Send a text message containing the top three headlines about a specific stock if the delta between yesterday and
+the day before is more than 5% in either direction.
+Note: This code hasn't been properly tested because I accidentally made too many API calls in one day because I didn't
+limit my searches. To finalize soon. 🙃
