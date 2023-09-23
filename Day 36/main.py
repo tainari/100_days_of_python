@@ -5,6 +5,7 @@ STOCK_API_KEY = sys.argv[1]
 NEWS_API_KEY = sys.argv[2]
 TWILIO_ACCOUNT_SID = sys.argv[3]
 TWILIO_AUTH_TOKEN = sys.argv[4]
+PHONE_NUMBER = sys.argv[5]
 
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla"
@@ -24,21 +25,21 @@ result = requests.get(
 yesterdays_closing_price = float(result["Time Series (Daily)"][yesterday]["4. close"])
 day_before_yesterdays_closing_price = float(result["Time Series (Daily)"][day_before_yesterday]["4. close"])
 delta = yesterdays_closing_price / day_before_yesterdays_closing_price
-print(delta)
 
 ## STEP 2: Use https://newsapi.org
 # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME.
 if delta < 0.95 or delta > 1.05:
-    news_url = ('https://newsapi.org/v2/everything?'
-                f'q={COMPANY_NAME}&'
-                'sortBy=publishedAt&'
-                f'from={yesterday}'
-                f'apiKey={NEWS_API_KEY}'
-                'language=en'
-                'pagesize=3'
-                'page=1'
-                )
-    news_response = requests.get(news_url).json()['articles'][:3]
+    news_url = 'https://newsapi.org/v2/everything?'
+    news_params = {
+        "q": COMPANY_NAME,
+        "sortBy": "publishedAt",
+        "from": yesterday,
+        "apiKey": NEWS_API_KEY,
+        "language": "en",
+        "pagesize": 3,
+        "page": 1
+    }
+    news_response = requests.get(url=news_url, params=news_params).json()['articles']
     if delta < 0.95:
         base_message = f"{STOCK}: {DOWN} {round((1 - delta) * 100)}%\n"
     else:
@@ -54,7 +55,7 @@ if delta < 0.95 or delta > 1.05:
         message = client.messages.create(
             from_='+18885992395',
             body=message_body,
-            to='+16465888715'
+            to=PHONE_NUMBER  # '+16465888715'
         )
 
 # Optional: Format the SMS message like this:
