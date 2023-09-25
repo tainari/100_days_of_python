@@ -174,5 +174,11 @@ Created a script that runs at 6:30am every day and sends a text to my personal n
 
 Send a text message containing the top three headlines about a specific stock if the delta between yesterday and
 the day before is more than 5% in either direction.
-Note: This code hasn't been properly tested because I accidentally made too many API calls in one day because I didn't
-limit my searches. To finalize soon. 🙃
+
+## Day 37: Habit Tracker ✅
+
+Habit tracker using Pixela API.
+
+## Day 38: Exercise Tracker 🏃🏻‍
+
+Track exercise using Python code, Nutritionix NLP API, and Sheetly Google-Sheets-Writing API
