@@ -24,7 +24,10 @@ def create_turtles():
         turtle.goto(x=start_x, y=y_coords[ind])
         turtles.append(turtle)
     return turtles
-
+"""
+Turtle race!
+I like turtles.
+"""
 turtles = create_turtles()
 
 at_finish = False

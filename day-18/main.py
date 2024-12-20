@@ -1,3 +1,9 @@
+"""
+
+Make art like Damien Hirst. Can this also sell for millions?!
+
+"""
+
 import random
 from turtle import Turtle, Screen
 import colorgram
