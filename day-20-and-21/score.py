@@ -27,14 +27,13 @@ class Score(Turtle):
         self.update_score()
 
     def save_high_score(self):
-        pass
-
-    def game_over(self):
-        self.high_score = max(self.high_score, self.score)
-        # print(f"High Score: {self.high_score}")
         with open("high_score.csv", "w") as f:
             writer = csv.writer(f)
             writer.writerow([self.high_score])
+
+    def game_over(self):
+        if self.high_score < self.score:
+            self.save_high_score()
         self.score = 0
 
     def get_high_score(self):
