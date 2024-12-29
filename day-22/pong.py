@@ -19,7 +19,6 @@ screen = Screen()
 screen.setup(width=SCREEN_WIDTH, height=SCREEN_HEIGHT)
 screen.bgcolor("black")
 screen.title("Pong!")
-screen.tracer(0)
 
 player_1 = Paddle(side="left", canvas_width=SCREEN_WIDTH, canvas_height=SCREEN_HEIGHT)
 screen.update()
