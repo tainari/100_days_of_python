@@ -16,27 +16,42 @@ screen.tracer(0)
 
 current_level = Level(screen_height=SCREEN_HEIGHT)
 
-cars = []
-for _ in range(20):
-    car = Car(screen_height=SCREEN_HEIGHT, screen_width=SCREEN_WIDTH, level = current_level.level)
-    cars.append(car)
+def initiate_cars(screen_height, screen_width, level, num_cars = 20):
+    cars = []
+    for _ in range(num_cars):
+        car = Car(screen_height=screen_height, screen_width=screen_width, level = level)
+        cars.append(car)
+    return cars
+
+def reset_cars(cars, level):
+    for car in cars:
+        car.increase_speed(level)
+        car.initiate_position()
+
+
 frogger = Frog(screen_height=SCREEN_HEIGHT)
 
 screen.listen()
 screen.onkey(frogger.up, "Up")
 screen.onkey(frogger.down, "Down")
 
+not_dead_yet = True
 game_over = False
-while not game_over:
-    while frogger.ycor() < frogger.end_y:
-        screen.update()
-        time.sleep(0.1)
-        for car in cars:
-            car.move()
-            if car.distance(frogger) < 20:
-                game_over = True
-                break
+cars = initiate_cars(screen_height=SCREEN_HEIGHT, screen_width=SCREEN_WIDTH, level=current_level.level)
 
+while not game_over:
+    screen.update()
+    time.sleep(0.1)
+    for car in cars:
+        if car.distance(frogger) < 20:
+            game_over = True
+            break
+        car.move()
+
+    if frogger.ycor() >= frogger.end_y:
+        frogger.reset_position()
+        current_level.add_level()
+        reset_cars(cars, current_level.level)
 
 current_level.game_over()
 

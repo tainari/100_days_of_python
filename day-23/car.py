@@ -17,7 +17,7 @@ class Car(Turtle):
         self.max_x = int(screen_width // 2 * 1.5)
         self.min_y = - screen_height // 2 + 50
         self.max_y = screen_height // 2 - 50
-        self.speed = BASE_SPEED * level
+        self.increase_speed(level)
         self.initiate_position()
 
     def move(self):
@@ -34,7 +34,10 @@ class Car(Turtle):
 
     def reset_position(self):
         self.hideturtle()
-        new_x = random.randint(self.max_x, int(self.max_x*1.5))
+        new_x = random.randint(self.max_x, int(self.max_x*1.2))
         new_y = random.randint(self.min_y, self.max_y)
         self.goto(x=new_x, y=new_y)
         self.showturtle()
+
+    def increase_speed(self, level: int):
+        self.speed = BASE_SPEED * (1 + 0.1 * (level - 1))
