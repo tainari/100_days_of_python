@@ -8,6 +8,5 @@ for name in names:
     name = name.strip()
     letter = template.replace("[name]", name)
     with open("./Output/ReadyToSend/" + name + ".txt", "w") as f:
-        for line in letter:
-            f.write(line)
+        f.write(letter)
     print(f"Letter to {name} complete.")
