@@ -32,7 +32,6 @@ def convert_number():
         convert_km_to_mi()
     else:
         convert_mi_to_km()
-    # output_value.config(text=str(output))
 
 number_input = tk.Entry()
 number_input.grid(row=0, column=1)
