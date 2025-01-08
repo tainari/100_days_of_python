@@ -23,7 +23,7 @@ canvas = tk.Canvas(window,width=800, height=526, background=BACKGROUND_COLOR, bo
 canvas.create_image(400,263,image=card_front)
 # add language title
 # current_language = "French"
-language = canvas.create_text(400, 150, text="farts", font=("Arial", 40, "italic"), fill="black")
+language = canvas.create_text(400, 150, text="", font=("Arial", 40, "italic"), fill="black")
 # current_word = "word"
 word = canvas.create_text(400, 263, text="", font=("Arial", 65, "bold"), fill="black")
 canvas.grid(row=0, column=0, columnspan=3)
