@@ -4,6 +4,8 @@ import datetime, json, requests, smtplib
 STOCK = "REGN"
 COMPANY_NAME = "Regeneron Pharma"
 
+# Note: using a JSON rather than environmental variables because I don't want a million API keys I
+# probably won't be using again cluttering up the file :)
 with open('../info.json') as f:
     contents = json.load(f)
     STOCK_API_KEY = contents['stock_api_key']
