@@ -65,3 +65,7 @@ Using the OpenWeather API to send an email notification if it's going to rain th
 
 ### Day 36: Stock Trend News Alert 📈
 Leverages alphavantage.co and newsapi.org APIs to send an email alert with recent headlines if a stock of choice has a >5% change in its price from yesterday to the day before.
+
+### Day 37: Pixela Graph 📊
+Introduction to post, put, and delete in working with APIs.
+
