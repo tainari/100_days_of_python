@@ -69,3 +69,5 @@ Leverages alphavantage.co and newsapi.org APIs to send an email alert with recen
 ### Day 37: Pixela Graph 📊
 Introduction to post, put, and delete in working with APIs.
 
+### Day 38: Workout Tracker 🏃🏻‍♀️
+Using Nutritionix and Sheetly to create a workout logger.
