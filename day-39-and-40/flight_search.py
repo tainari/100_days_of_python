@@ -51,6 +51,3 @@ class FlightSearch:
             return None
 
         return response.json()
-
-flight_search = FlightSearch()
-flight_search.check_route_price(destination_airport="YYZ", max_price=1000)
