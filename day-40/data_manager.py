@@ -9,5 +9,7 @@ class DataManager:
         sheety_headers = {
             "Authorization": info["sheety_flight_token"],
         }
-        response = requests.get(sheety_workout_endpoint, headers=sheety_headers)
-        self.data = response.json()['prices']
+        response = requests.get(f"{sheety_workout_endpoint}prices", headers=sheety_headers)
+        self.price_data = response.json()['prices']
+        response = requests.get(f"{sheety_workout_endpoint}users", headers=sheety_headers)
+        self.user_data = response.json()['users']

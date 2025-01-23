@@ -7,8 +7,9 @@ class NotificationManager:
             self.EMAIL = contents['email']
             self.PASSWORD = contents['password']
 
-    def send_email(self, text: str):
-        with smtplib.SMTP('smtp.gmail.com', 587) as connection:
-            connection.starttls()
-            connection.login(user=self.EMAIL, password=self.PASSWORD)
-            connection.sendmail(from_addr=self.EMAIL, to_addrs=self.EMAIL, msg=text.encode())
+    def send_email(self, text: str, users: dict):
+        for user in users:
+            with smtplib.SMTP('smtp.gmail.com', 587) as connection:
+                connection.starttls()
+                connection.login(user=self.EMAIL, password=self.PASSWORD)
+                connection.sendmail(from_addr=self.EMAIL, to_addrs=user['email'], msg=text.encode())

@@ -47,7 +47,7 @@ class FlightSearch:
             params = query
         )
         if response.status_code != 200:
-            print("There was a problem with the query. Please check the destination airport IATA code.")
+            print(f"There was a problem with the query. Please check the destination airport IATA code({destination_airport}).")
             return None
 
         return response.json()
