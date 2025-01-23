@@ -26,7 +26,7 @@ class FlightSearch:
         return response.json()['access_token']
 
 
-    def check_route_price(self, destination_airport: str, max_price: int):
+    def check_route_price(self, destination_airport: str, max_price: int, nonstop: bool = True):
         headers = {"Authorization": f"Bearer {self._token}"}
         tomorrow = datetime.datetime.now() + datetime.timedelta(days=1)
         in_six_months = datetime.datetime.now() + datetime.timedelta(days=180)
@@ -36,7 +36,7 @@ class FlightSearch:
             "departureDate": tomorrow.strftime("%Y-%m-%d"),
             "returnDate": in_six_months.strftime("%Y-%m-%d"),
             "adults": 1,
-            "nonStop": "true",
+            "nonStop": "true" if nonstop else "false",
             "maxPrice": max_price,
             "currencyCode": "USD",
             "max": 10
