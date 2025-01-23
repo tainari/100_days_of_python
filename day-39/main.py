@@ -6,12 +6,6 @@ from notification_manager import NotificationManager
 
 HOME_AIRPORT = "NYC"
 
-# things to do
-# get destinations of interest and price ceilings from google sheet
-# find all routes between home airport and destinations
-# find if any routes are below the cutoff
-# emai if they are (send details)
-
 destination_data = DataManager()
 notification_manager = NotificationManager()
 

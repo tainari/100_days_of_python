@@ -71,3 +71,9 @@ Introduction to post, put, and delete in working with APIs.
 
 ### Day 38: Workout Tracker 🏃🏻‍♀️
 Using Nutritionix and Sheetly to create a workout logger.
+
+### Day 39: Personal Flight Deal Tracker ✈️
+Using the Sheety and Amadeus flight info APIs to set low-price alerts for flights between NYC and some places of interest :) 
+
+### Day 40: Expanded Flight Deal Tracker 🛫
+Expand on Day 39 to allow users to create their own flight alerts.
