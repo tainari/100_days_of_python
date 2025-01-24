@@ -77,3 +77,9 @@ Using the Sheety and Amadeus flight info APIs to set low-price alerts for flight
 
 ### Day 40: Expanded Flight Deal Tracker 🛫
 Expand on Day 39 to allow users to create their own flight alerts.
+
+### Day 41-42: Intro to HTML
+Skipped because I learned all the basics of HTML during the days of GeoCities. My Neopets plushie gallery was unparalleled.
+
+
+
