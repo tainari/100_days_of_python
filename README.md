@@ -81,6 +81,9 @@ Expand on Day 39 to allow users to create their own flight alerts.
 ### Day 41-43: Intro to HTML & CSS
 Skipped because I learned all the basics of HTML & CSS during the days of GeoCities. My Neopets plushie gallery was unparalleled.
 
-### Day 44: Motivational Posters ✨
+### Day 44: Motivational Poster ✨
+Silly practice/reminder of using divs to organize a webpage.
 
+### Day 45: Movie Ranking List 🎥
+Learning to use Beautiful Soup to scrape websites and extract key information.
 
