@@ -87,3 +87,5 @@ Silly practice/reminder of using divs to organize a webpage.
 ### Day 45: Movie Ranking List 🎥
 Learning to use Beautiful Soup to scrape websites and extract key information.
 
+### Day 46: Spotify Playlist
+Small script to scrape the top 100 songs from a given date and generate a Spotify playlist.
