@@ -2,7 +2,7 @@
 
 This repo follows the 100 Days of Python curriculum from Angela Yu. While I've been coding in Python since 2012, much of my work was focused on one-off Data Science projects and did not necessitate the use of 'best practices' because scripts were generally not used repeatably. At J2, the majority of my work was in dbt, so this course was a perfect way to get the rust off my Python skills and learn best (or at least better) practices.
 
-I restarted the program completely to make sure I didn't forget anything (e.g., in the last year, I completely forgot how the `tkinter` module worked), but generally skipped assignments that I had [previously completed](https://github.com/tainari/100_days_of_python_old/tree/main) if I already felt confident in the concepts AND I didn't think it would be fun to recreate them. 
+I restarted the program completely to make sure I didn't forget anything (e.g., in the last year, I completely forgot how the `tkinter` module worked), but generally skipped assignments that I had [previously completed](https://github.com/tainari/100_days_of_python_old/tree/main) if I already felt confident in the concepts AND I didn't think it would be fun to recreate them.
 
 ## Beginner Projects
 
@@ -87,5 +87,8 @@ Silly practice/reminder of using divs to organize a webpage.
 ### Day 45: Movie Ranking List 🎥
 Learning to use Beautiful Soup to scrape websites and extract key information.
 
-### Day 46: Spotify Playlist
-Small script to scrape the top 100 songs from a given date and generate a Spotify playlist.
+### Day 46: Spotify Playlist 🎧
+Script to scrape the top 100 songs from a given date on Billboard.com and generate a Spotify playlist.
+
+### Day 47: Amazon Price Tracker 💸
+Script to scrape an Amazon page and send an email notification if the price is below a certain point. Expanded scope of project to 
