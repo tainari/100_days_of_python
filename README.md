@@ -91,4 +91,10 @@ Learning to use Beautiful Soup to scrape websites and extract key information.
 Script to scrape the top 100 songs from a given date on Billboard.com and generate a Spotify playlist.
 
 ### Day 47: Amazon Price Tracker 💸
-Script to scrape an Amazon page and send an email notification if the price is below a certain point. Expanded scope of project to 
+Script to scrape an Amazon page and send an email notification if the price is below a certain point. Expanded scope of project to
+
+### Day 48: Cookie Clicker Bot 🍪
+Basic Cookie Clicker bot, plus attempting to make one for the 'real' site (alas, they catch on that it's a bot a little too quickly.)
+
+### Day 49: LinkedIn Auto-Applier 👩🏼‍💻
+Script to auto-apply to the first job at a given search URL. 

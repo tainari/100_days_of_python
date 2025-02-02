@@ -31,23 +31,10 @@ submit_login = driver.find_element(By.XPATH, '//*[@id="base-sign-in-modal"]/div/
 submit_login.click()
 
 easy_apply_button = driver.find_element(By.XPATH,'//*[@id="ember52"]')
-# easy_apply_button = driver.find_element(By.TAG_NAME, "button")
 easy_apply_button.click()
-# easy_apply = driver.find_element(By.CLASS_NAME,"jobs-apply-button--top-card")
-# easy_apply_button = driver.find_element(By.TAG_NAME, "button")
-# easy_apply_button.click()
 
-# easy_apply_phone_number = driver.find_element(By.ID, "single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-4124145495-14246397268-phoneNumber-nationalNumbersingle-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-4124145495-14246397268-phoneNumber-nationalNumber")
-# easy_apply_phone_number = driver.find_element(By.ID, "single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-4128883487-9-phoneNumber-nationalNumber")
 easy_apply_phone_number = driver.find_element(By.CLASS_NAME, "artdeco-text-input--input")
 easy_apply_phone_number.send_keys("+14169268676")
 
-follow = driver.find_element(By.ID, "follow-company-checkbox")
-if follow.is_selected():
-    follow.click()
-# next_page_button = driver.find_element(By.XPATH, '//*[@id="ember361"]/span')
-# next_page_button.click()
-#
-# next_next_page_button = driver.find_element(By.XPATH, '//*[@id="ember361"]/span')
-# next_next_page_button.click()
-
+easy_apply_submit = driver.find_element(By.XPATH, '//*[@id="ember321"]')
+easy_apply_submit.click()
