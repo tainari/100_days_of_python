@@ -98,3 +98,5 @@ Basic Cookie Clicker bot, plus attempting to make one for the 'real' site (alas,
 
 ### Day 49: LinkedIn Auto-Applier 👩🏼‍💻
 Script to auto-apply to the first job at a given search URL. 
+
+### Day 53: Data Entry Bot 🤖
